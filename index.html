@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人注册</title>
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入我们初始化的css -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入我们自己的注册页面的css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="w">
+        <header>
+            <div class="logo">
+                <a href="index.html"> <img src="images/image(1).png" alt=""></a>
+            </div>
+        </header>
+        <div class="registerarea">
+            <h3>登录
+                <div class="login">没有账号？点此去<a href="#">注册一个</a></div>
+            </h3>
+            <div class="reg_form">
+                <form action="">
+
+                    <div class="big">
+                        <div class="plc1">
+                            <label for="codesys">虚拟PLC类型：</label>
+
+                            <label for="s7300">Codesys</label>
+                            <input type="checkbox" id="s7300" name="virtual_plc_type" value="S7300" checked>
+
+                            <label for="gxsimulator">GxSimulator</label>
+                            <input type="checkbox" id="gxsimulator" name="virtual_plc_type" value="GxSimulator">
+
+                            <label for="rslogix">RSLogix</label>
+                            <input type="checkbox" id="rslogix" name="virtual_plc_type" value="RSLogix">
+                        </div>
+                        <div class="plc2">
+                            <label for="s1500">S7300</label>
+                            <input type="checkbox" id="s1500" name="virtual_plc_type" value="S1500">
+
+                            <label for="s7200">S71200</label>
+                            <input type="checkbox" id="s7200" name="virtual_plc_type" value="S7200">
+
+                            <label for="s7200">S71500</label>
+                            <input type="checkbox" id="s7200" name="virtual_plc_type" value="S7200">
+
+                            <label for="s7200">S7-200</label>
+                            <input type="checkbox" id="s7200" name="virtual_plc_type" value="S7200">
+                        </div>
+                    </div>
+
+
+                    <ul>
+                        <li>
+                            <label for="">用户：</label> <input type="text" class="inp">
+                            <span class="error"></span>
+                        </li>
+
+                        <li><label for="">登录密码：</label> <input type="password" class="inp">
+                            <span class="error"> </span>
+                        </li>
+
+                        <ul>
+                            <li class="agree">
+                                <input type="checkbox" name="" id="">
+                                记住密码
+                            </li>
+                            <li class="agree">
+                                <input type="checkbox" name="" id="">
+                                自动登录
+                            </li>
+                        </ul>
+
+                        <li>
+                            <input type="submit" value="登录" class="btn" onclick="redirectToPage(event)">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="#">关于我们</a> | <a href="#">联系我们</a> | 联系客服 | 更多惊喜 | English Site | Contact U
+                </div>
+                <div class="copyright">
+                    地址：江西省南昌市红谷滩新区学府大道999号 邮编：330103 电话：400-618-4000 <br>
+                    京ICP备08001421号京公网安备110108007702
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function redirectToPage(event) {
+            event.preventDefault(); // 阻止表单默认提交行为
+            window.location.href = "main.html"; // 替换为你想要跳转的URL
+        }
+    </script>
+</body>
+
+</html>
